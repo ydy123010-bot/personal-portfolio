@@ -1,0 +1,37 @@
+{
+  "name": "Web Development Intro",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "formulahendry.auto-rename-tag",
+        "ecmel.vscode-html-css"
+      ],
+      "settings": {
+        "liveServer.settings.root": "/",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "github.copilot.editor.enableAutoCompletions": false,
+        "github.copilot.enable": {
+          "*": false
+        },
+        "editor.quickSuggestions": {
+          "other": false,
+          "comments": false,
+          "strings": false
+        },
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.parameterHints.enabled": false,
+        "editor.minimap.enabled": false,
+        "editor.renderWhitespace": "none",
+        "breadcrumbs.enabled": false,
+        "editor.wordWrap": "on",
+        "editor.bracketPairColorization.enabled": true,
+        "files.autoSave": "afterDelay"
+      }
+    }
+  },
+  "forwardPorts": [5500],
+  "postCreateCommand": "echo 'Ready! Right-click any HTML file and select Open with Live Server'"
+}
